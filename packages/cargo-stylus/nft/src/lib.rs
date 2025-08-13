@@ -70,13 +70,13 @@ impl StylusNFT {
     }
 
     /// Mints an NFT to the specified address, and does not call onErc712Received
-    pub fn mint_to(&mut self, to: Address) -> Result<(), Vec<u8>> {
+    pub fn mint_to_dhruv_rohit_229(&mut self, to: Address) -> Result<(), Vec<u8>> {
         self.erc721.mint(to)?;
         Ok(())
     }
 
     /// Mints an NFT and calls onErc712Received with empty data
-    pub fn safe_mint(&mut self, to: Address) -> Result<(), Vec<u8>> {
+    pub fn safe_mint_dhruv_rohit_229(&mut self, to: Address) -> Result<(), Vec<u8>> {
         Erc721::safe_mint(self, to, Vec::new())?;
         Ok(())
     }
