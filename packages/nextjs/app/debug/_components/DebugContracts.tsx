@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { IStylusNFT } from "./IStylusNFT";
 import { ethers } from "ethers";
 
-const contractAddress="0x2f389e0d223e9b45b63341bd461e40ac45f05d04"; // Get this from run-dev-node.sh output
+const contractAddress="0xd59b50c51e4f7e3f729c916d2b664183ee265e10"; // Get this from run-dev-node.sh output
 const provider = new ethers.JsonRpcProvider(process.env.NEXT_PUBLIC_RPC_URL || "");
 const privateKey = process.env.NEXT_PUBLIC_PRIVATE_KEY || "";
 const signer = new ethers.Wallet(privateKey, provider);
